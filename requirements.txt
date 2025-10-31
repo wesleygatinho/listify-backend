@@ -4,3 +4,8 @@ Flask-Migrate
 Flask-Bcrypt
 python-dotenv
 psycopg2-binary
+Flask-JWT-Extended
+requests
+Flask-Cors
+marshmallow
+gunicorn

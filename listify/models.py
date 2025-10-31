@@ -37,6 +37,7 @@ class Compra(db.Model):
     data_compra = db.Column(db.DateTime, default=datetime.datetime.utcnow)
     valor_total = db.Column(db.Numeric(10, 2), nullable=False, default=0.0)
     usuario_id = db.Column(db.Integer, db.ForeignKey('usuario.id'), nullable=False)
+    finalizada = db.Column(db.Boolean, default=False)
 
     itens = db.relationship('ItemDaCompra', backref='compra_associada', lazy=True)
 
